@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.rinekri.collagetion"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary" 
+    app:titleTextAppearance="@style/sharegram_toolbar"
+    android:elevation="3dp" >
+    
+	<com.rinekri.widget.SharegramTextView 
+		xmlns:app="http://schemas.android.com/apk/res/com.rinekri.collagetion"
+	    android:id="@+id/counter_text_view"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:theme="@style/sharegram_toolbar_textview"
+	    android:text="@string/app_name"
+	    app:fontCustom="roboto_medium" />
+	
+</android.support.v7.widget.Toolbar>

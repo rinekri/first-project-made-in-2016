@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sharegram_primary" type="color">#4caf50</item>
+    <item name="sharegram_primary_dark" type="color">#357a38</item>
+    <item name="sharegram_text_primary" type="color">#4caf50</item>
+    <item name="sharegram_window_background" type="color">#fafafa</item>
+    <item name="sharegram_toolbar_background" type="color">#ffffff</item>
+    <item name="sharegram_button_text" type="color">#ffffff</item>
+    <item name="sharegram_hint" type="color">#b8b8b8</item>
+    <item name="sharegram_message" type="color">#b8b8b8</item>
+    <item name="sharegram_textview" type="color">#000</item>
+    <item name="sharegram_cardview_background" type="color">#FFFFFF</item>
+</resources>

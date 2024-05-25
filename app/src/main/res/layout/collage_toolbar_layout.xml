@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" 
+		   android:layout_width="match_parent"
+		   android:layout_height="?attr/actionBarSize"
+		   android:background="?attr/colorPrimary"
+		   android:elevation="3dp">  
+		   
+	<ImageButton
+	    android:id="@+id/back_image_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@null"
+	    android:src="@drawable/back_bttn" 
+	    android:contentDescription="@string/image_button_home"
+	   	android:paddingRight="32dp" />
+	
+	<com.rinekri.widget.SharegramTextView 
+		xmlns:app="http://schemas.android.com/apk/res/com.rinekri.collagetion"
+	    android:id="@+id/counter_text_view"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="@color/sharegram_toolbar_background"
+	    android:textSize="20sp"
+	    app:fontCustom="roboto_medium"
+	    android:theme="@style/sharegram_toolbar_textview" />
+	
+	<com.rinekri.widget.SharegramTextView
+		xmlns:app="http://schemas.android.com/apk/res/com.rinekri.collagetion"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/counter_of_images"
+	    android:theme="@style/sharegram_toolbar_textview"
+	    app:fontCustom="roboto_medium" />
+	
+</android.support.v7.widget.Toolbar>

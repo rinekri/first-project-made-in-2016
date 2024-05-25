@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<include 
+		   android:id="@+id/fragment_post_toolbar"
+		   layout="@layout/post_toolbar_layout"
+		   android:layout_width="match_parent"
+		   android:layout_height="wrap_content" />
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+		<com.rinekri.widget.SharegramButton 
+		    xmlns:app="http://schemas.android.com/apk/res/com.rinekri.collagetion"
+		    android:id="@+id/post_button"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="bottom"
+		    android:text="@string/share_button_text"
+		    android:layout_alignParentBottom="true"
+		    app:fontCustom="roboto_medium" />
+
+		<FrameLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_above="@id/post_button">
+		    
+			<RelativeLayout
+			    android:id="@+id/common_collage"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:padding="5dp"
+			    android:layout_gravity="center"
+				android:background="@color/sharegram_primary">
+			    
+					<ImageView
+					    android:id="@+id/collage_block_three"
+					    android:layout_width="230dp"
+					    android:layout_height="120dp"
+					    android:layout_alignParentLeft="true"
+					    android:layout_alignParentTop="false"
+					    android:layout_marginBottom="5dp"
+					    android:layout_marginRight="5dp"
+					    android:background="@color/sharegram_primary_dark"
+					    android:scaleType="centerCrop" />
+			    
+					<ImageView
+					    android:id="@+id/collage_block_one"
+					    android:layout_width="120dp"
+					    android:layout_height="120dp"
+					    android:layout_alignParentRight="false"
+					    android:layout_alignParentTop="false"
+					    android:layout_marginBottom="5dp"
+					    android:layout_toRightOf="@id/collage_block_three"
+					    android:background="@color/sharegram_primary_dark"
+					    android:scaleType="centerCrop" />
+					
+					<ImageView
+					    android:id="@+id/collage_block_four"
+					    android:layout_width="150dp"
+					    android:layout_height="50dp"
+					    android:layout_alignParentBottom="false"
+					    android:layout_alignParentLeft="true"
+					    android:layout_below="@id/collage_block_three"
+					    android:layout_marginRight="5dp"
+					    android:background="@color/sharegram_primary_dark"
+					    android:scaleType="centerCrop" />
+		
+					<ImageView
+					    android:id="@+id/collage_block_two"
+					    android:layout_width="200dp"
+					    android:layout_height="50dp"
+					    android:layout_alignParentBottom="false"
+					    android:layout_alignParentRight="false"
+					    android:layout_below="@id/collage_block_one"
+					    
+					    android:layout_toRightOf="@id/collage_block_four"
+					    android:background="@color/sharegram_primary_dark"
+					    android:scaleType="centerCrop" />
+				    
+			</RelativeLayout>
+		    
+		</FrameLayout>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="AppTheme.Widget" />
+	
+    <style name="AppTheme.Widget.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/sharegram_button_default</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/sharegram_button_text</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">150dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+    
+    <style name="sharegram_toolbar" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/toolbar_text_size</item>
+        <item name="android:textColor">@color/sharegram_toolbar_background</item>
+    </style>
+    
+    <style name="sharegram_toolbar_textview">
+        <item name="android:textSize">@dimen/toolbar_text_size</item>
+        <item name="android:textColor">@color/sharegram_toolbar_background</item>
+    </style>
+    
+    <style name="sharegram_listview">
+		<item name="android:clipToPadding">false</item>
+		<item name="android:paddingTop">@dimen/outer_paddings</item>
+		<item name="android:scrollbarStyle">outsideOverlay</item>
+    </style>
+    
+    <style name="sharegram_listview_item">
+		<item name="android:textSize">@dimen/small_text_size</item>
+		<item name="android:textColor">@color/sharegram_textview</item>
+    </style>
+    
+    <style name="sharegram_listview_item.big">
+		<item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+
+    <style name="list_posts_empty_text_view">
+        <item name="android:textColor">@color/sharegram_message</item>
+        <item name="android:textSize">@dimen/message_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/message_text_padding</item>
+    </style>
+
+    <style name="list_posts_empty_text_view.big">
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

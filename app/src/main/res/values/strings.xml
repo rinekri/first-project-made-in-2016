@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Collagetion</string>
+    <string name="search_button_text">Search</string>
+	<string name="hint_for_users">Instagram nick</string>
+	<string name="collage_button_text">Collage it!</string>
+	<string name="share_button_text">Share it!</string>
+	<string name="activity_post_title">Sharing Collage</string>
+	<string name="image_button_home">Back to the Home</string>
+	<string name="counter_of_images">&#160;of 4</string>
+	<string name="api_message_without_posts">Account doesn\'t have posts.</string>
+	<string name="api_message_secure_account">This is closed account.</string>
+	<string name="api_message_network_gone">Network was interrupted.</string>
+	<string name="message_bad_title">Title is out</string>
+	<string name="toast_load">Collage is loading&#8230;</string>
+	<string name="toast_warning_share">Dind\'t find a good app to share&#8230;</string>
+	<string name="toast_null_nick">Enter nick!</string>
+	<string name="toast_bad_nick">Didn\'t find that nick!</string>
+	<string name="toast_space_nick">Nick shouldn\'t have spaces!</string>
+	<string name="toast_network_offline">You don\'t have connection!</string>
+	<string name="dialog_loading_title">Loadning&#8230;</string>
+	<string name="dialog_loading_text">Please wait a moment!</string>
+	<string name="impicit_intent_title">Share collage using:</string>
+	<string name="message_bad">Sorry, happened something bad :(</string>
+	<string name="menu_fragment_collage_refresh_posts">Refresh posts</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="search_button_text">Заглянуть</string>
+	<string name="hint_for_users">Ник в Инсте</string>
+	<string name="collage_button_text">Давай коллаж</string>
+	<string name="share_button_text">Расшарить</string>
+	<string name="activity_post_title">Готовый коллаж</string>
+	<string name="image_button_home">Вернуться назад</string>
+	<string name="counter_of_images">&#160;из 4</string>
+	<string name="message_bad">Сорян, что-то сломалось :(</string>
+	<string name="api_message_without_posts">Пустой аккаунт.</string>
+	<string name="api_message_secure_account">Сюда доступ закрыт.</string>
+	<string name="api_message_network_gone">Проверь Сеть, юный падаван.</string>
+	<string name="message_bad_title">Безымянный</string>
+	<string name="toast_load">Коллаж на подходe&#8230;</string>
+	<string name="toast_null_nick">Ник-то введи!</string>
+	<string name="toast_bad_nick">Нету такого юзера&#8230;</string>
+	<string name="toast_space_nick">Ники с пробелами запрещены!</string>
+	<string name="toast_network_offline">Ты не в Сети!</string>
+	<string name="impicit_intent_title">Расшарить коллаж в:</string>
+	<string name="dialog_loading_title">Загрузочка…</string>
+	<string name="dialog_loading_text">Погоди секундочку!</string>
+	<string name="menu_fragment_collage_refresh_posts">Обновить посты</string>
+	<string name="toast_warning_share">Некуда шарить коллаж&#8230;</string>
+</resources>

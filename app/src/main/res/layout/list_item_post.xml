@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/insta_post_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="136dp"
+    android:paddingLeft="@dimen/outer_paddings"
+    android:paddingRight="@dimen/outer_paddings"
+    android:paddingBottom="@dimen/outer_paddings"
+    android:clipToPadding="false">
+    
+	<android.support.v7.widget.CardView 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    card_view:cardCornerRadius="3dp"
+	    card_view:cardElevation="6dp"
+		card_view:cardBackgroundColor="@color/sharegram_cardview_background">
+	    
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+		    <FrameLayout
+		        android:id="@+id/insta_post_image_frameLayout"
+		        android:layout_width="136dp"
+		        android:layout_height="136dp"
+		        android:layout_alignParentLeft="true"
+		        android:background="#0F000000">
+	
+		        <ImageView
+		            android:id="@+id/insta_post_image_imageVIew"
+		            android:layout_width="136dp"
+		            android:layout_height="136dp"
+		            android:contentDescription="Image from post"
+		            android:scaleType="centerCrop"/>
+		        <ImageView
+		            android:id="@+id/insta_post_check_false_image_imageView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/check_0_icon" 
+		            android:layout_gravity="center_vertical|center_horizontal"
+		            android:contentDescription="Check False Image"/>
+		        <ImageView
+		            android:id="@+id/insta_post_check_true_image_imageView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/check_1_icon" 
+		            android:layout_gravity="center_vertical|center_horizontal"
+		            android:contentDescription="Check True Image"
+		            android:visibility="gone"/>
+	
+	    	</FrameLayout>
+	
+		    <LinearLayout
+		        android:layout_toRightOf="@id/insta_post_image_frameLayout"
+		        android:layout_width="match_parent"
+		        android:layout_height="136dp"
+		        android:minWidth="208dp"
+		        android:orientation="vertical" 
+		        android:paddingLeft="@dimen/inner_paddings"
+		        android:paddingTop="@dimen/inner_paddings"
+		        android:paddingRight="@dimen/inner_paddings" >
+		
+		        <com.rinekri.widget.SharegramTextView
+		            android:id="@+id/insta_post_date_textView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="01 jan 2015"
+					android:theme="@style/sharegram_listview_item"
+		            android:layout_marginBottom="@dimen/inner_paddings"
+		            android:alpha="0.54"
+		            />
+		
+		        <com.rinekri.widget.SharegramTextView
+		            xmlns:app="http://schemas.android.com/apk/res/com.rinekri.collagetion"
+		            android:id="@+id/insta_post_title_textView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Post Title" 
+					android:theme="@style/sharegram_listview_item.big"
+		            android:ellipsize="end"
+		            android:maxLines="1"
+		            android:layout_marginBottom="@dimen/inner_paddings"
+		            app:fontCustom="roboto_light"
+		            />
+		
+	            <com.rinekri.widget.SharegramTextView
+	                android:id="@+id/insta_post_like_count_textView"
+	                android:layout_width="wrap_content"
+	                android:layout_height="16dp"
+	                android:text="000" 
+					android:theme="@style/sharegram_listview_item"
+	            	android:alpha="0.87"
+	            	android:drawableRight="@drawable/like_icon"
+	            	android:drawablePadding="@dimen/outer_paddings"
+	            	android:gravity="center_vertical"
+	            	android:layout_gravity="right|bottom"/>
+	
+		    </LinearLayout>
+	
+		</RelativeLayout>
+		
+	</android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<include 
+		   android:id="@+id/fragment_collage_toolbar"
+		   layout="@layout/collage_toolbar_layout"
+		   android:layout_width="match_parent"
+		   android:layout_height="wrap_content" />
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+		<com.rinekri.widget.SharegramButton
+		    xmlns:app="http://schemas.android.com/apk/res/com.rinekri.collagetion"
+		    android:id="@+id/collage_button"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="bottom"
+		    android:text="@string/collage_button_text"
+		    android:layout_alignParentBottom="true"
+		    android:visibility="gone"
+		    app:fontCustom="roboto_medium" />
+
+		<android.support.v7.widget.ListViewCompat
+			android:id="@id/android:list"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_above="@id/collage_button" 
+		    android:scrollbars="none"
+		    android:theme="@style/sharegram_listview"
+			android:choiceMode="multipleChoice" />
+
+		<LinearLayout
+			android:id="@id/android:empty"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:layout_gravity="center_horizontal"
+			android:padding="20dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/message_bad"
+				android:theme="@style/list_posts_empty_text_view.big"/>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/locked_media_icon"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/api_message_secure_account"
+				android:theme="@style/list_posts_empty_text_view"/>
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/internet_off_icon"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/api_message_network_gone"
+				android:theme="@style/list_posts_empty_text_view"/>
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/without_media_icon"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/api_message_without_posts"
+				android:theme="@style/list_posts_empty_text_view"/>
+		</LinearLayout>
+
+	</RelativeLayout>
+</LinearLayout>

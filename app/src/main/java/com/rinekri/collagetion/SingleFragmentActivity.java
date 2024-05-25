@@ -39,7 +39,7 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             TypedValue typedValue = new TypedValue();
             Resources.Theme theme = getTheme();
-            theme.resolveAttribute(R.attr.colorPrimaryDark, typedValue, true);
+            theme.resolveAttribute(android.R.attr.colorPrimaryDark, typedValue, true);
             int color = typedValue.data;
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
